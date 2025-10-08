@@ -1,9 +1,9 @@
 import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
-  HandRaisedIcon,
   CalendarIcon,
   FlagIcon,
+  HandRaisedIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';

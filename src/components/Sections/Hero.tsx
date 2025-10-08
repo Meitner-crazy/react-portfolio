@@ -35,13 +35,12 @@ const Hero: FC = memo(() => {
                     primary ? 'border-orange-500 ring-orange-500' : 'border-white ring-white',
                   )}
                   href={href}
-                  target={text === 'Contact' ? '_self' : '_blank'}
-                  key={text}>
+                  key={text}
+                  target={text === 'Contact' ? '_self' : '_blank'}>
                   {text}
                   {Icon && <Icon className="h-5 w-5 text-white sm:h-6 sm:w-6" />}
                 </a>
-              )
-              )}
+              ))}
             </div>
           </div>
         </div>

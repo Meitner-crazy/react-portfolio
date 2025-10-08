@@ -1,5 +1,5 @@
-import {FC, memo, useCallback, useMemo, useState} from 'react';
 import emailjs from '@emailjs/browser';
+import {FC, memo, useCallback, useMemo, useState} from 'react';
 
 interface FormData {
   name: string;
@@ -69,42 +69,42 @@ const ContactForm: FC = memo(() => {
     <form className="grid min-h-[320px] grid-cols-1 gap-y-4" method="POST" onSubmit={handleSendMessage}>
       <input
         className={inputClasses}
+        disabled={isLoading}
         name="name"
         onChange={onChange}
-        value={data.name}
         placeholder="Name"
         required
         type="text"
-        disabled={isLoading}
+        value={data.name}
       />
       <input
         autoComplete="email"
         className={inputClasses}
+        disabled={isLoading}
         name="email"
         onChange={onChange}
-        value={data.email}
         placeholder="Email"
         required
         type="email"
-        disabled={isLoading}
+        value={data.email}
       />
       <textarea
         className={inputClasses}
+        disabled={isLoading}
         maxLength={250}
         name="message"
         onChange={onChange}
-        value={data.message}
         placeholder="Message"
         required
         rows={6}
-        disabled={isLoading}
+        value={data.message}
       />
 
       <button
         aria-label="Submit contact form"
         className="w-max rounded-full border-1 bg-teal-300 px-4 py-2 text-sm font-medium text-white shadow-md outline-none hover:bg-stone-800 focus:ring-2 focus:ring-orange-600 focus:ring-offset-2 focus:ring-offset-stone-800 disabled:opacity-50 disabled:cursor-not-allowed"
-        type="submit"
-        disabled={isLoading}>
+        disabled={isLoading}
+        type="submit">
         {isLoading ? 'Sending...' : 'Send Message'}
       </button>
 
