@@ -38,7 +38,7 @@ const ContactForm: FC = memo(() => {
 
       try {
         const SERVICE_ID = 'service_xfeu0pn';
-        const TEMPLATE_ID = 'template_maxg2xm';
+        const TEMPLATE_ID = 'template_r8qwa8x';
         const PUBLIC_KEY = '7o9ByO_oV6ONesCRt';
         await emailjs.send(
           SERVICE_ID,
