@@ -289,7 +289,7 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc list-inside space-y-1">
         <li>
-          Developed AI platform with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Ant Design</strong>
+          Developed AI platform with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Ant Design</strong>{' '}
           and <strong>aHooks</strong>, leveraging built-in hooks to accelerate development.
         </li>
         <li>
@@ -297,7 +297,7 @@ export const experience: TimelineItem[] = [
           loading, reducing initial load time.
         </li>
         <li>
-          Architected scalable state management with <strong>Valtio</strong> for reactive UI updates and
+          Architected scalable state management with <strong>Valtio</strong> for reactive UI updates and{' '}
           <strong>useSWR</strong> for intelligent data fetching with auto caching and revalidation, boosting API call
           performance.
         </li>
@@ -307,7 +307,7 @@ export const experience: TimelineItem[] = [
           reducing test cycles duration while maintaining UI stability.
         </li>
         <li>
-          Improved release efficiency with <strong>Docker</strong> containerization for <strong>Node.js</strong>
+          Improved release efficiency with <strong>Docker</strong> containerization for <strong>Node.js</strong>{' '}
           applications, <strong>Kubernetes</strong> orchestration with auto-scaling, rolling updates, health checks, and
           container registry management.
         </li>
@@ -361,7 +361,7 @@ export const experience: TimelineItem[] = [
         </li>
         <li>
           Designed scalable <strong>Google Firebase</strong> backend with microservices architecture, handling real-time
-          updates for 500+ concurrent users with <strong>Firebase Authentication</strong> and
+          updates for 500+ concurrent users with <strong>Firebase Authentication</strong> and{' '}
           <strong>Firebase Realtime Database</strong>.
         </li>
       </ul>
