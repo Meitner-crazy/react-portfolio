@@ -2,7 +2,7 @@ import classNames from 'classnames';
 import {FC, memo, UIEventHandler, useCallback, useEffect, useMemo, useRef, useState} from 'react';
 
 import {isApple, isMobile} from '../../config';
-import {SectionId, HighlightSections} from '../../data/data';
+import {HighlightSections, SectionId} from '../../data/data';
 import {Highlight} from '../../data/dataDef';
 import useInterval from '../../hooks/useInterval';
 import useWindow from '../../hooks/useWindow';
@@ -86,7 +86,7 @@ const Highlights: FC = memo(() => {
               ref={scrollContainer}>
               {highlights.map((highlight, index) => {
                 const isActive = index === activeIndex;
-                return <Hilight isActive={isActive} key={`${highlight.name}-${index}`} highlight={highlight} />;
+                return <Hilight highlight={highlight} isActive={isActive} key={`${highlight.name}-${index}`} />;
               })}
             </div>
             <div className="flex gap-x-4">

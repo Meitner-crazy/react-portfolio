@@ -28,11 +28,11 @@ import {
   ContactSection,
   ContactType,
   Hero,
+  HighlightSection,
   HomepageMeta,
   PortfolioItem,
   SkillGroup,
   Social,
-  HighlightSection,
   TimelineItem,
 } from './dataDef';
 
