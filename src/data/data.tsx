@@ -32,7 +32,7 @@ import {
   PortfolioItem,
   SkillGroup,
   Social,
-  TestimonialSection,
+  HighlightSection,
   TimelineItem,
 } from './dataDef';
 
@@ -55,7 +55,7 @@ export const SectionId = {
   Resume: 'resume',
   Skills: 'skills',
   Stats: 'stats',
-  Testimonials: 'testimonials',
+  Highlights: 'hilights',
 } as const;
 
 export type SectionId = (typeof SectionId)[keyof typeof SectionId];
@@ -231,7 +231,7 @@ export const portfolioItems: PortfolioItem[] = [
   {
     title: "Conways's life Game",
     description:
-      'Conway’s Game of Life simulation built with JavaScript, HTML/CSS and React, supporting custom grid sizes and heat map.',
+      "Conway's Game of Life simulation built with JavaScript, HTML/CSS and React, supporting custom grid sizes and heat map.",
     url: 'https://xiyu-qing-assignment2.onrender.com/',
     image: porfolioImage7,
   },
@@ -369,12 +369,9 @@ export const experience: TimelineItem[] = [
   },
 ];
 
-/**
- * Testimonial section
- */
-export const testimonial: TestimonialSection = {
+export const HighlightSections: HighlightSection = {
   imageSrc: testimonialImage,
-  testimonials: [
+  highlights: [
     {
       name: 'Highlights',
       text: 'Collaborated in a team environment using Git workflows with feature branches and pull requests. Conducted code reviews, resolved merge conflicts, and maintained clean commit history. Integrated CI/CD pipelines that automated testing and deployment processes.',
