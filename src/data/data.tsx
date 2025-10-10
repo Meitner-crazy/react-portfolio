@@ -69,14 +69,15 @@ export const heroData: Hero = {
   description: (
     <div className="text-left px-20">
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Hello, I'm <strong className="text-stone-100">Qing Chen</strong> 🌷
+        Hello, I'm <strong className="text-stone-100">Qing Chen</strong>.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        A Software Engineer and Master's student at Northeastern University (Seattle), I enjoy exploring ideas, building
-        fun projects, and learning new things every day.
+        I'm a Software Engineer and Master's student at Northeastern University in Seattle, and I enjoy exploring ideas,
+        collaborating on innovative projects, and learning new things every day.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        Welcome to my little corner of the internet — always open to interesting conversations and collaborations! ✨
+        Welcome to my little corner of the internet - I'm always open to interesting conversations and stimulating
+        opportunities!
       </p>
     </div>
   ),
@@ -101,15 +102,15 @@ export const heroData: Hero = {
 export const aboutData: About = {
   profileImageSrc: profilepic,
   description: `I'm interested in software development and have relevant industrial experience with both frontend and
-        backend development. I'm familiar with modern technologies like java, JavaScript/TypeScript, Python, React,
-        node, databases, AWS, etc,.`,
+        backend development. I'm familiar with modern technologies like Java, JavaScript/TypeScript, Python, React,
+        Node, Databases, AWS.`,
   aboutItems: [
     {label: 'Location', text: 'Seattle, WA', Icon: MapIcon},
     {label: 'Age', text: '25', Icon: CalendarIcon},
     {label: 'Nationality', text: 'Chinese / China', Icon: FlagIcon},
     {label: 'Interests', text: 'Swimming, Hiking, Travel ', Icon: SparklesIcon},
     {label: 'Study', text: 'Northeastern University', Icon: AcademicCapIcon},
-    {label: 'OpenTo', text: '2025&2026 internship | co-op | NG', Icon: HandRaisedIcon},
+    {label: 'OpenTo', text: '2025 & 2026 internship | co-op | full-time', Icon: HandRaisedIcon},
   ],
 };
 
@@ -118,7 +119,7 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Spoken Languages',
     skills: [
       {
         name: 'English',
@@ -135,7 +136,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Programming languages',
+    name: 'Programming Languages',
     skills: [
       {
         name: 'Java',
@@ -152,7 +153,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Backend Development',
     skills: [
       {
         name: 'Node.js',
@@ -169,7 +170,7 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Frontend Development',
     skills: [
       {
         name: 'React Native',
@@ -259,12 +260,9 @@ export const education: TimelineItem[] = [
     title: 'Masters in Computer Science',
     content: (
       <div>
-        <p>
-          <strong>GPA</strong>: 3.93/4.0
-        </p>
         <p className="prose-sm sm:prose-base">
-          <strong>Courses</strong>: algorithm, web developement(React, Node), databases(MySQL, MongoDB, DynamoDB,
-          Redis), cloud computing, distributed system, Machine Learning, computer system, network, AI
+          <strong>Courses</strong>: Algorithm, Web Development(React, Node), Databases(MySQL, MongoDB, DynamoDB, Redis),
+          Cloud Computing, Distributed Systems, Machine Learning, Computer Systems, Network, AI
         </p>
       </div>
     ),
@@ -273,11 +271,7 @@ export const education: TimelineItem[] = [
     date: 'September 2017 - June 2021',
     location: 'Wuhan University of Technology',
     title: 'Bachelors in English and French',
-    content: (
-      <p>
-        <strong>GPA</strong>: 3.76/4.0
-      </p>
-    ),
+    content: <p></p>,
   },
 ];
 
@@ -289,27 +283,25 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc list-inside space-y-1">
         <li>
-          Developed AI platform with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Ant Design</strong>{' '}
-          and <strong>aHooks</strong>, leveraging built-in hooks to accelerate development.
+          Developed AI platform with <strong>TypeScript</strong>, <strong>React</strong>, <strong>Ant Design</strong> &{' '}
+          <strong>aHooks</strong>; leveraging built-in hooks to accelerate development
         </li>
         <li>
-          Optimized <strong>Webpack</strong> configuration through advanced code splitting, dynamic imports, lazy
-          loading, reducing initial load time.
+          Optimized <strong>Webpack</strong> configuration through advanced code splitting, dynamic imports & lazy
+          loading; reducing initial load time
         </li>
         <li>
-          Architected scalable state management with <strong>Valtio</strong> for reactive UI updates and{' '}
-          <strong>useSWR</strong> for intelligent data fetching with auto caching and revalidation, boosting API call
-          performance.
+          Built scalable state management with <strong>Valtio</strong> for reactive UI updates & <strong>useSWR</strong>{' '}
+          for intelligent data fetching with auto caching & revalidation; boosting API call performance
         </li>
         <li>
           Reached 90% end-to-end test coverage with <strong>Playwright</strong> by integrating parallel test execution,
-          cross-browser testing and snapshot testing. Integrated into CI/CD using <strong>GitLab Actions</strong>,
-          reducing test cycles duration while maintaining UI stability.
+          cross-browser testing & snapshot testing. Integrated into CI/CD using <strong>GitLab Actions</strong>;
+          reducing test cycles duration while maintaining UI stability
         </li>
         <li>
-          Improved release efficiency with <strong>Docker</strong> containerization for <strong>Node.js</strong>{' '}
-          applications, <strong>Kubernetes</strong> orchestration with auto-scaling, rolling updates, health checks, and
-          container registry management.
+          Improved release efficiency with <strong>Docker</strong> builds for <strong>Node.js</strong> &{' '}
+          <strong>Kubernetes</strong> deployments; implementing auto-scaling & rolling updates
         </li>
       </ul>
     ),
@@ -321,25 +313,25 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc list-inside space-y-1">
         <li>
-          Developed AI-powered content generation platform with <strong>React</strong>, <strong>TypeScript</strong>, and{' '}
-          <strong>Next.js</strong>, leveraging server-side rendering, static site generation, API routes, and middleware
-          supporting 10+ daily active users for data labeling.
+          Developed AI-powered content generation platform with <strong>React</strong>, <strong>TypeScript</strong> &{' '}
+          <strong>Next.js</strong>; leveraging server-side rendering, static site generation, API routes & middleware
+          supporting 10+ daily active users for data labeling
         </li>
         <li>
-          Established reusable component library with 15+ encapsulated <strong>React</strong> components, reducing
-          duplicate code by 40%.
+          Established reusable component library with 15+ encapsulated <strong>React</strong> components; reducing
+          duplicate code by 40%
         </li>
         <li>
-          Implemented streaming LLM responses via <strong>WebSocket</strong>, enabling real-time content preview as AI
-          generates output.
+          Implemented streaming LLM responses via <strong>WebSocket</strong>; enabling real-time content preview as AI
+          generated output.
         </li>
         <li>
           Improved <strong>MySQL</strong> efficiency by implementing composite indexing, query optimization, read
-          replicas and database sharding, reducing query execution time by 20%.
+          replicas & database sharding; reducing query execution time by 20%
         </li>
         <li>
-          Configured <strong>Nginx</strong> reverse proxy with caching layer and dual-environment routing for
-          staging/production deployments.
+          Configured <strong>Nginx</strong> reverse proxy with caching layer & dual-environment routing; enbabling
+          staging/production deployments
         </li>
       </ul>
     ),
@@ -351,18 +343,18 @@ export const experience: TimelineItem[] = [
     content: (
       <ul className="list-disc list-inside space-y-2">
         <li>
-          Implemented <strong>Mapbox</strong>-based map view allowing users to browse properties by location and apply
-          real-time filters.
+          Implemented <strong>Mapbox</strong>-based map view allowing users to browse properties by location & apply
+          real-time filters
         </li>
         <li>
           Integrated <strong>Whisper AI</strong>-powered voice search functionality with advanced speech-to-text
-          processing, <strong>NLP</strong> for query understanding, intent recognition algorithms, and semantic search
-          capabilities.
+          processing, <strong>NLP</strong> for query understanding, intent recognition algorithms & semantic search
+          capabilities
         </li>
         <li>
-          Designed scalable <strong>Google Firebase</strong> backend with microservices architecture, handling real-time
-          updates for 500+ concurrent users with <strong>Firebase Authentication</strong> and{' '}
-          <strong>Firebase Realtime Database</strong>.
+          Designed scalable <strong>Google Firebase</strong> backend with microservices architecture; handling real-time
+          updates for 500+ concurrent users with <strong>Firebase Authentication</strong> &{' '}
+          <strong>Firebase Realtime Database</strong>
         </li>
       </ul>
     ),
@@ -393,7 +385,7 @@ export const HighlightSections: HighlightSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch',
-  description: "Questions, ideas, or just a friendly hello — I'm always happy to hear from you ✨ 💌 🌷 👋",
+  description: "Questions, ideas, or just a friendly hello — I'm always happy to hear from you!",
   items: [
     {
       type: ContactType.Email,
